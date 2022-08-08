@@ -1,0 +1,25 @@
+.contacts-list{
+    list-style: none;
+    padding: 0;
+}
+.contacts-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.contacts-btn{
+    outline: 1px solid black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    transition: all 250ms linear;
+}
+
+.contacts-btn:hover{
+  outline: none;
+  background-color: grey;
+  color: white;
+}
