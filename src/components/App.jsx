@@ -6,9 +6,10 @@ import Filter from './filter/filter';
 function App () {
  
   const [contacts, setContacts] = useState(() => {
+    
     try {
       const savedContacts = localStorage.getItem('contacts');
-      return savedContacts === null ? undefined : JSON.parse(savedContacts);
+      return savedContacts === null ? [] : JSON.parse(savedContacts);
     } catch (error) {
       console.error("Get state error: ", error.message);
     }
